@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:minWidth="100dp"
+    android:minHeight="100dp"
+    android:gravity="center"
+    android:background="#ffffff"
+    >
+    
+    <ProgressBar android:id="@+id/weibo_img_load"
+        style="@style/myprogressstyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+    <ImageView android:id="@+id/weibo_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        />
+    <!-- 贴近父元素的下右边缘 -->
+    <Button android:id="@+id/btn_large"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/enlarge"
+        android:layout_alignParentBottom="true"  
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+    <Button android:id="@+id/btn_small"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shrink"
+        android:layout_alignParentBottom="true"  
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

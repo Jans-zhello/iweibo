@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="35dp" 
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/pull_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/last_update"
+        android:src="@drawable/pull" />
+
+    <ProgressBar
+        android:id="@+id/pull_bar"
+        style="@style/myprogressstyle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/pull_img"
+         />
+
+    <RelativeLayout
+        android:id="@+id/pull_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/pull_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pull_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pulltorefresh"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pull_update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/last_update"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pull_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#efa608"
+            android:text="23:26:05 19-10-2017"
+            android:textSize="12sp" 
+            android:layout_toRightOf="@id/pull_update_text"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

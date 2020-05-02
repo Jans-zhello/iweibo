@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+     >
+    <Button android:id="@+id/btn_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addaccount_change"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+      />
+    <LinearLayout 
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:background="@drawable/head_bg"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="110dip"
+    >
+   <ImageView  android:id="@+id/img_user_head"
+       android:layout_width="105dp" 
+       android:layout_height="105dp"
+       android:src="@drawable/user_head"
+       />     
+         
+    </LinearLayout>
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+     android:layout_marginTop="10dip"
+    >
+   <TextView android:id="@+id/user_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/input"
+    android:enabled="false"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:gravity="center"
+    android:textScaleX="1.0"
+    android:editable="false"
+       />
+   <Button android:id="@+id/list_user"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"      
+       android:background="@drawable/btn_user_select"
+       />
+   </LinearLayout>
+    <Button android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_change"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="21dip"
+      />
+   
+</LinearLayout>

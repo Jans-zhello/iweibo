@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip"
+    >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+      <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/info"
+          />  
+        <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/oauth"   
+          android:layout_marginLeft="5dip"
+          android:textSize="14dip"
+          android:textColor="@color/black"
+            />    
+    </LinearLayout>
+    <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/oauthTip"
+          android:paddingTop="15dip"   
+          android:textSize="16dip"
+            /> 
+   <RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_alignParentBottom="true">      
+       <Button android:id="@+id/btn_auto_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auto_begin"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dip"
+       />      
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d5f8f5"
+    android:orientation="vertical" >
+
+  <include
+        android:id="@+id/layout_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/titlebar" />
+
+  <include
+        android:id="@+id/layout_progress"
+        layout="@layout/progress" />   
+
+ <ListView
+      android:id="@+id/lv_weibos"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/layout_titlebar"
+      android:layout_marginBottom="44dp"
+      android:cacheColorHint="#000000"
+      android:divider="@drawable/line"
+      android:dividerHeight="0.2dp"
+       />
+</RelativeLayout>

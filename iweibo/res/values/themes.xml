@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 消除 标题栏状态栏使之全屏显示 的xml文件方法(前面也有两行代码解决问题的办法,目前共两种) -->
+<resources>   
+        <!-- name 是Style的名称，parent 继承那个父类样式 -->
+        <style name="theme_fullScreen" parent="android:Theme.Black"> 
+            <item name="android:windowNoTitle">true</item>  <!-- 设置无标题 -->
+            <item name="android:windowFullscreen">?android:windowNoTitle</item> <!-- 是否填充慢屏幕，引用android:windowNoTitle 的值 -->
+   		</style>   
+</resources>

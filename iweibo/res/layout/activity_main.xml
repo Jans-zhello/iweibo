@@ -1,0 +1,62 @@
+
+<!--footer 负责 总切换布局，  -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:id="@android:id/tabhost"
+    android:background="#d5f8f5"
+    >
+<TabWidget 
+    android:id="@android:id/tabs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    >
+</TabWidget>
+ <FrameLayout 
+     android:id="@android:id/tabcontent"
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     
+     ></FrameLayout>
+<RadioGroup android:id="@+id/home_radio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    >
+    <RadioButton android:id="@+id/home_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/home"    
+    style="@style/home_style" 
+    android:drawableTop="@drawable/home_icon"
+        />
+    <RadioButton android:id="@+id/at_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/refer"    
+    style="@style/home_style" 
+    android:drawableTop="@drawable/at_icon"
+        />
+     <RadioButton android:id="@+id/msg_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/msg"    
+    style="@style/home_style" 
+    android:drawableTop="@drawable/msg_icon"
+        />
+   <RadioButton android:id="@+id/more_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/more"    
+    style="@style/home_style" 
+    android:drawableTop="@drawable/more_icon"
+        />
+    
+</RadioGroup>
+
+</TabHost>
